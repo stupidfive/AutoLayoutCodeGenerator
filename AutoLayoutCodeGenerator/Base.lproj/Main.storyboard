@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutCodeGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="view">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rp4-hU-rq6" userLabel="blueView">
+                                <rect key="frame" x="180" y="20" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze4-Oa-eZT" userLabel="yellowView">
+                                        <rect key="frame" x="60" y="32" width="120" height="64"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ze4-Oa-eZT" firstAttribute="centerY" secondItem="Rp4-hU-rq6" secondAttribute="centerY" id="1KK-xY-vO8"/>
+                                    <constraint firstAttribute="height" constant="128" id="DBx-gI-ncr"/>
+                                    <constraint firstItem="Ze4-Oa-eZT" firstAttribute="centerX" secondItem="Rp4-hU-rq6" secondAttribute="centerX" id="ic4-Js-Ue2"/>
+                                    <constraint firstAttribute="width" constant="240" id="w6N-mb-nJs"/>
+                                    <constraint firstItem="Ze4-Oa-eZT" firstAttribute="width" secondItem="Rp4-hU-rq6" secondAttribute="width" multiplier="0.5" id="wme-I9-2Yt"/>
+                                    <constraint firstItem="Ze4-Oa-eZT" firstAttribute="height" secondItem="Rp4-hU-rq6" secondAttribute="height" multiplier="0.5" id="zuk-Ht-mdq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZ5-ZJ-XEv" userLabel="redView">
+                                <rect key="frame" x="180" y="156" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zZ5-ZJ-XEv" firstAttribute="width" secondItem="Rp4-hU-rq6" secondAttribute="width" id="3Hc-dB-QQe"/>
+                            <constraint firstItem="zZ5-ZJ-XEv" firstAttribute="centerX" secondItem="Rp4-hU-rq6" secondAttribute="centerX" id="BTL-ki-vRk"/>
+                            <constraint firstItem="zZ5-ZJ-XEv" firstAttribute="top" secondItem="Rp4-hU-rq6" secondAttribute="bottom" constant="8" id="LgF-nb-KPl"/>
+                            <constraint firstItem="Rp4-hU-rq6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bLd-rz-sAw"/>
+                            <constraint firstItem="zZ5-ZJ-XEv" firstAttribute="height" secondItem="Rp4-hU-rq6" secondAttribute="height" id="taS-bT-TTe"/>
+                            <constraint firstItem="Rp4-hU-rq6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yee-Tl-3BQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
